@@ -1,0 +1,383 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* navbar */
+.navbar{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(0, 0, 0, 0.5);
+	position: sticky;
+	top: 0;
+}
+.navbar ul{
+	display: flex;
+	list-style: none;
+	margin: 20px 0px;
+}
+.navbar ul li{
+	font-family: 'Edu SA Beginner', cursive;
+	font-size: 1.1rem;
+	font-weight: bold;
+}
+.navbar ul li a{
+	text-decoration: none;
+	color: white;
+	padding: 8px 25px;
+	transition: all .5s ease;
+}
+.navbar ul li a:hover{
+	background-color: white;
+	color: black;
+	box-shadow: 0 0 10px white;
+}
+
+/* home section */
+#home{
+	display: flex;
+	flex-direction: column;
+	background-color: rgba(0, 0, 0, 0.5);
+	height: 840px;
+	justify-content: center;
+	align-items: center;
+	color: white;
+}
+
+.main
+	{
+		display: flex;
+		flex-direction: column;
+		/*border: 1px solid white;*/
+		align-items: center;
+		position: absolute;
+		top: 30%;
+		right: 10%;
+	}
+.headings
+	{
+		font-family: century;
+		font-size: 2rem;
+		text-align: center;
+		margin: 40px 0px;
+	}
+.btn
+	{
+		padding: 10px 35px;
+		background-color: transparent;
+		border: 1px solid white;
+		color: white;
+		outline: none;
+		transition: .6s ease;
+	}
+.btn:hover
+	{
+		cursor: pointer;
+		background-color: white;
+		color: black;
+		box-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white;
+		font-weight: bold;
+	}
+
+/* about section */
+#about
+	{
+		display: flex;
+		flex-direction: column;
+		box-sizing: border-box;
+		padding: 0;
+		margin-bottom: 0;
+		color: black;
+	}
+.headings{
+	font-family: cursive;
+}
+#pic
+	{
+		display: flex;
+	}
+#pic img
+	{
+		width: 475px;
+		height: 450px;
+		padding-left: 50px;
+	}
+#intro
+	{
+		display: flex;
+		flex-direction: column;
+		text-align: justify;
+		padding: 10px;
+	}
+
+#intro p{
+	font-family: arial;
+	text-align: justify;
+	padding: 10px;
+	letter-spacing: 2px;
+
+}
+
+/* gallery section */
+#gallery1
+	{
+		display: flex;
+		flex-direction: column;
+		background-color: rgba(0, 0, 0, 0.9);
+		color: white;
+		align-items: center;
+		padding: 20px;
+	}
+.gallery
+	{
+		font-family: cursive;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		box-sizing: border-box;
+	}
+.gallery img
+	{
+		width: 360px;
+		height: 240px;
+		margin: 10px;
+	}
+/* experience section*/
+
+#experience{
+	display: flex;
+	flex-direction: column;
+}
+.content-section{
+  float: left;
+  width: 55%;
+}
+.image-section{
+  float: right;
+  width: 40%;
+}
+.image-section img{
+  width: 70%;
+  height: 70%;
+  padding-top: 0px;
+}
+.content-section .title{
+  text-transform: uppercase;
+  font-size: 20px;
+  font-family: cursive;
+}
+.content{
+  color: black;
+  font-size: 20px;
+  margin: 5px 0;
+  padding-left: 100px;
+  color: black;
+  font-family: arial;
+  letter-spacing: 2px;
+}
+
+
+/* PORTFOLIO*/
+
+#portfolio{
+	align-self: center;
+	color: black;
+}
+
+.title{
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.kotok{
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.title h1{
+  color: black;
+  font-size: 50px;
+}
+td{
+  padding: 10px;
+}
+tr:nth-child(odd){
+  background-color: #c5d6f4;
+}
+tr:nth-child(even){
+  background-color: c1f0b8;
+}
+tr:hover{
+	cursor: pointer;
+  background-color: #f1cfab;
+}
+
+/* experience */
+
+.experience1{
+	display: flex;
+}
+
+/* education */
+
+body{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+.container{
+	position: relative;
+	width: 1200px;
+	height: 300px;
+	margin: 50px auto;
+	
+}
+.container .box
+{
+	position: relative;
+	width: calc(400px - 30px);
+	height: calc(300px - 30px);
+	background: #000;
+	float: left;
+	margin: 15px;
+	box-sizing: border-box;
+	overflow: hidden;
+	border-radius: 10px;
+
+}
+.container .box .icon
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #f00;
+	transition: 0.5s;
+	z-index: 1;
+}
+.container .box:hover .icon
+{
+	top: 20px;
+	left: calc(50% - 40px);
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+}
+.container .box .icon .fa
+{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	font-size: 80px;
+	transition: 0.5s;
+	color: #fff;
+}
+.container .box:hover .icon .fa
+{
+	font-size: 40px;
+}
+
+.container .box .konten
+{
+	position: absolute;
+	top: 100%;
+	height: calc(100% - 100px);
+	text-align: center;
+	padding: 20px;
+	box-sizing: border-box;
+	transition: 0.5s;
+	opacity: 0;
+}
+
+.container .box:hover .konten
+{
+	top: 100px;
+	opacity: 1;
+}
+
+.container .box .konten h3
+{
+	margin: 0 0 10px;
+	padding: 0;
+	color: #fff;
+	font-size: 24px;
+}
+.container .box .konten p
+{
+	margin: 0;
+	padding: 0;
+	color: #fff;
+}
+
+.container .box:nth-child(1) .icon
+{
+	background: #319635;
+}
+.container .box:nth-child(1)
+{
+	background: #ccc708;
+}
+
+.container .box:nth-child(2) .icon
+{
+	background: #d03852;
+}
+.container .box:nth-child(2)
+{
+	background: #f54967;
+}
+
+.container .box:nth-child(3) .icon
+{
+	background: #23798e;
+}
+.container .box:nth-child(3)
+{
+	background: #328fa5;
+}
+
+.container img
+{
+	display: flex;
+	height:90px;
+	width: 50;
+	margin-left: 1px;
+}
+
+/* contact */
+
+.contact_title{
+  text-transform: uppercase;
+  font-size: 20px;
+  font-family: 'Ibarra Real Nova', serif;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.center .avatar img{
+  border-radius: 100%;
+  width: 250px;
+  height: 250px;
+  margin-top: 20%;
+  object-fit: cover;
+  object-position: 0 -8px;
+}
+.center{
+  width: 100%;
+  margin-top: -200px;
+  background-color: rgb(0, 0, 0, 0, 7);
+  height: 60vh;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.audio_8{
+  position: absolute;
+  margin-top: 50px;
+  margin-left: 550px;
+}
